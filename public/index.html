@@ -35,13 +35,17 @@
         font-size: 18px;
       }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
   </head>
   <body>
-    <div id="wrapper">
-      <h1>Dev News Scraper</h1>
-      <h2><i>Read the lates Dev news:</i></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Dev News Scraper! Read the lates Dev news here ... <br>Click on each title to leave a comment</span>
+    </nav>
+    <div class="container">
+      <div class="row">
+          <div class=".col-12 .col-md-8" id="articles"></div>
+          <div class=".col-6 .col-md-4 mx-auto" id="notes"></div>
+      </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
