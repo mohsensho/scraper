@@ -10,7 +10,7 @@ $.getJSON("/articles", function(data) {
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p>${data[i].title}</p>
+          <p data-id="${data[i]._id}">${data[i].title}</p>
           <footer class="blockquote-footer"><a href="${data[i].link}" target="_blank">${data[i].link}</a></footer>
         </blockquote>
       </div>
