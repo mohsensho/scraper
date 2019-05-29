@@ -27,10 +27,9 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/newsboi';
-mongoose.connect("mongodb://localhost/newsscraper", { useNewUrlParser: true });
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/badscraper';
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
-    .then(() => console.log(`Connected to newsscraper...`))
+    .then(() => console.log(`Connected to badscraper...`))
     .catch(err => console.error(err));
 
 // Routes
